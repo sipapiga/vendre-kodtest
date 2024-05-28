@@ -10,36 +10,29 @@
     --color-grey-500: #666666;
     --color-grey-700: #333333;
 
+    --space-75: clamp(0.5625rem, 0.4688rem + 0.3125vi, 0.75rem);
+    --space-100: clamp(0.75rem, 0.625rem + 0.4167vi, 1rem);
+    --space-150: clamp(1.125rem, 0.9375rem + 0.625vi, 1.5rem);
+    --space-200: clamp(1.5rem, 1.25rem + 0.8333vi, 2rem);
+
+    --font-size-50: clamp(0.75rem, 0.6875rem + 0.2083vw, 0.875rem);
+    --font-size-75: clamp(0.875rem, 0.8125rem + 0.2083vw, 1rem);
+    --font-size-100: clamp(1rem, 0.9375rem + 0.2083vw, 1.125rem);
+    --font-size-200: clamp(1.125rem, 1.0625rem + 0.2083vw, 1.25rem);
+    --font-size-300: clamp(1.25rem, 1.125rem + 0.4167vw, 1.5rem);
+    --font-size-400: clamp(1.5rem, 1.25rem + 0.8333vw, 2rem);
+    --font-size-500: clamp(2.5rem, 1.75rem + 2.5vw, 4rem);
+    --font-size-600: clamp(3rem, 2.25rem + 2.5vw, 4.5rem);
+
 }
 
-/* semantic color variables for this project */
 :root {
     --color-background: var(--color-grey-100);
     --color-background-soft: var(--color-grey-200);
 
     --color-text: var(--color-grey-700);
-
-    --color-border: var(--vt-c-divider-light-2);
-    --color-border-hover: var(--vt-c-divider-light-1);
-
-    --color-heading: var(--vt-c-text-light-1);
-    --color-text: var(--vt-c-text-light-1);
-
-    --section-gap: 160px;
 }
 
-@media (prefers-color-scheme: dark) {
-    :root {
-        --color-background: var(--vt-c-black);
-        --color-background-soft: var(--vt-c-black-soft);
-        --color-background-mute: var(--vt-c-black-mute);
-
-        --color-border: var(--vt-c-divider-dark-2);
-        --color-border-hover: var(--vt-c-divider-dark-1);
-
-        --color-heading: var(--vt-c-text-dark-1);
-    }
-}
 
 /* http://meyerweb.com/eric/tools/css/reset/
    v2.0 | 20110126
@@ -141,25 +134,47 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 h1 {
-    font-size: 45px;
+    font-size: var(--font-size-500);
+    line-height: 1.1;
+    letter-spacing: 0.02em;
+    font-weight: 500;
+    text-wrap: balance;
+    hyphens: auto;
 }
 
 h2 {
-    font-size: 36px;
+    font-size: var(--font-size-400);
+    line-height: 1.15;
+    letter-spacing: 0.02em;
+    font-weight: 500;
+    text-wrap: balance;
+    hyphens: auto;
 }
 
 h3 {
-    font-size: 30px;
+    font-size: var(--font-size-300);
+    line-height: 1.25;
+    font-weight: 500;
+    text-wrap: balance;
+    hyphens: auto;
 }
 
 h4 {
-    font-size: 24px;
+    font-size: var(--font-size-200);
+    line-height: 1.35;
+    font-weight: 500;
+    text-wrap: balance;
+    hyphens: auto;
 }
 
 h5 {
-    font-size: 20px;
+    font-size: var(--font-size-100);
+    line-height: 1.35;
+    font-weight: 500;
 }
 
-h6 {
-    font-size: 16px;
+p {
+    font-size: var(--font-size-100);
+    font-weight: 300;
+    line-height: 1.5;
 }
