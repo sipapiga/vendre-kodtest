@@ -1,35 +1,67 @@
 @import './base.css';
 
-#app {
-  max-width: 1280px;
-  margin: 0 auto;
-  padding: 2rem;
-  font-weight: normal;
+.mx-auto{
+    margin-right: auto;
+    margin-left: auto;
 }
-
-a,
-.green {
-  text-decoration: none;
-  color: hsla(160, 100%, 37%, 1);
-  transition: 0.4s;
-  padding: 3px;
+.container {
+    padding-left: 3rem;
+    padding-right: 3rem;
 }
-
-@media (hover: hover) {
-  a:hover {
-    background-color: hsla(160, 100%, 37%, 0.2);
-  }
+.max-w-container {
+    max-width: 85rem;
 }
-
-@media (min-width: 1024px) {
-  body {
+.w-full{
+    width: 100%;
+}
+.flex{
     display: flex;
-    place-items: center;
-  }
-
-  #app {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    padding: 0 2rem;
-  }
+}
+.flex-row{
+    flex-direction: row;
+}
+.flex-col{
+    flex-direction: column;
+}
+.items-center{
+    align-items: center;
+}
+.list-none{
+    list-style-type: none;
+}
+.margin{
+    margin: 1rem;
+}
+.mx-4{
+    margin-left: 1rem;
+    margin-right: 1rem;
+}
+.my-4{
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+}
+.py-4{
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+}
+.justify-between{
+    justify-content: space-between;
+}
+.gap-4{
+    gap:1rem;
+}
+.shadow-lg{
+    box-shadow: 0 10px 15px -3px rgb(0 0 0 / 0.1), 0 4px 6px -4px rgb(0 0 0 / 0.1);
+}
+.topbar{
+    position: sticky;
+    background-color: var(--color-background-soft);
+}
+.logo img{
+    width: 3rem;
+    height: 3rem;
+}
+.anchor_nav li a{
+    color: var(--color-text);
+    text-decoration: none;
 }
